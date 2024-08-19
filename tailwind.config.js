@@ -3,10 +3,23 @@ export default {
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
+     "./node_modules/flowbite/**/*.js",
+     'node_modules/preline/dist/*.js',
   ],
   darkMode : 'class',
   theme: {
-    extend: {},
+    extend: {
+      height: {
+      '128': '40rem',
+      },
+      colors: {
+        'background' :'#FEF9F2',
+      },
+      fontFamily: {
+        customFont: ['"Libre Baskerville"', "sans-serif"],
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin'), require('preline/plugin')],
+  
 }

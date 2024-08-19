@@ -93,6 +93,10 @@ class ProductResource extends Resource
                         Toggle::make('is_active')
                             ->required()
                             ->default(true),
+
+                        Toggle::make('is_popular')
+                        ->required()
+                        ->default(false),
                     ])
                 ])->columnSpan(1)
 
@@ -117,6 +121,9 @@ class ProductResource extends Resource
                     ->boolean(),
 
                 Tables\Columns\IconColumn::make('is_active')
+                    ->boolean(),
+
+                Tables\Columns\IconColumn::make('is_popular')
                     ->boolean(),
                 
                 Tables\Columns\TextColumn::make('created_at')

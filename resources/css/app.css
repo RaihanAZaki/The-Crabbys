@@ -1,3 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.judul {
+    font-family: "Edu AU VIC WA NT Hand";
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .slider {
+    -webkit-appearance: none; /* Menghapus styling default */
+    width: 100%; /* Mengatur lebar slider */
+    height: 6px; /* Mengatur tinggi track slider */
+    background: rgba(217, 119, 7, 0.5); /* Warna track slider dengan transparansi */
+    border-radius: 8px; /* Radius rounded untuk track */
+    outline: none; /* Menghapus outline default */
+  }
+
+  /* Styling untuk thumb slider */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Menghapus styling default */
+    appearance: none; /* Menghapus styling default */
+    width: 20px; /* Lebar thumb */
+    height: 20px; /* Tinggi thumb */
+    border-radius: 50%; /* Membuat thumb bulat */
+    background: #1D4ED8; /* Warna thumb biru (Tailwind CSS color) */
+    cursor: pointer; /* Mengatur cursor saat hover */
+  }
+
+  .slider::-moz-range-thumb {
+    width: 20px; /* Lebar thumb */
+    height: 20px; /* Tinggi thumb */
+    border-radius: 50%; /* Membuat thumb bulat */
+    background: #1D4ED8; /* Warna thumb biru (Tailwind CSS color) */
+    cursor: pointer; /* Mengatur cursor saat hover */
+  }
+
+  .slider::-ms-thumb {
+    width: 20px; /* Lebar thumb */
+    height: 20px; /* Tinggi thumb */
+    border-radius: 50%; /* Membuat thumb bulat */
+    background: #1D4ED8; /* Warna thumb biru (Tailwind CSS color) */
+    cursor: pointer; /* Mengatur cursor saat hover */
+  }
